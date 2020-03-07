@@ -1,5 +1,18 @@
 # PartyDetailsService
-Party Details Service is a CRUD Service. User(Client) can use the service to /POST new clients, get clients by client ID, or get clients by specific criteria like region, status, type
+Party Details Service is a CRUD Service. User(Client) can use the service to /POST new clients, get clients by client ID,
+or get clients by specific criteria like region, status, type.
+ 
+Users can also add Addresses to existing parties.
+
+The following stack of features comes defacto with the API make this API a resilient API:
+
+1 Suitable HTTP Actions(GET, POST, PUT, DELETE)
+2 Caching
+3 Redirection and Forwarding
+4 Security(Authentication and Authorization)
+5 Scalable API
+6 Evolvable API
+7 A spectrum of stateless to stateful services
 
 #Setting up execution environment
 
@@ -29,6 +42,12 @@ POST http://www.websitename.com/parties/{partyID}/address for adding a new addre
 
 GET http://www.websitename.com/parties/{partyID}/address
 List of addresses that the party with PartyID has created or owns
+
+#Technology Stack
+1 Spring Boot: Spring Web
+2 Spring data JPA
+3 H2 Database
+4 Lombok
 
 
 #Release Notes
