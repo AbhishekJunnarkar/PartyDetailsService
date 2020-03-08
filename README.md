@@ -51,3 +51,16 @@ List of addresses that the party with PartyID has created or owns
 
 
 #Release Notes
+1 To build, compile and Run the application
+    1.1 mvn clean spring-boot:run
+2 When the application starts, check the response for all parties
+    2.2 curl -v localhost:9090/parties
+3 To check the response for single party
+    3.2 curl -v localhost:9090/parties/{1}
+4 To try and query a party that doesnt exist
+    4.2 curl localhost:9090/parties/99
+        Response:
+        {"timestamp":"2020-03-08T10:28:48.711+0000","status":500,"error":"Internal Server Error","message":"Could not find
+         party 99","path":"/parties/99"}* Closing connection 0    
+
+
