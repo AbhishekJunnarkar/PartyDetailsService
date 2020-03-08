@@ -12,6 +12,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * <p>
  * Finding (one, all, by simple or complex properties)
  */
-interface PartyRepository extends JpaRepository<Party, Long> {
+public interface PartyRepository extends JpaRepository<Party, Long> {
 
 }

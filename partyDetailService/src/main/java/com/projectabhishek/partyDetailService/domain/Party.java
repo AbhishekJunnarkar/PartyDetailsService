@@ -23,7 +23,7 @@ public class Party {
     Party() {
     }
 
-    Party(String name, String region, String status, String type) {
+    public Party(String name, String region, String status, String type) {
         this.name = name;
         this.region = region;
         this.status = status;
